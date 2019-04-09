@@ -1,0 +1,35 @@
+[
+    {
+        "id": "siwuw9232",
+        "topic": "mimimi",
+        "question": "mimimi",
+        "correctAnswer": "mimimi",
+        "optionsAnswer": 
+        [{
+                "optionsID": 0,
+                "answer": "mimimi"
+            },
+            {
+                "optionsID": 1,
+               "answer": "mimimi"
+            },
+            {
+                "optionsID": 2,
+               "answer": "mimimi"
+            },
+            {
+                "optionsID": 3,
+               "answer": "mimimi"
+            }
+        ],
+        "createBy": [
+            {
+                "institution": "mimimi",
+                "teacherName": "mimimi",
+                "teacherEmail": "@as.com"
+            }
+            ],
+        "createAt": "29/03/2019",
+        "status": "ACTIVE"
+    }
+]
