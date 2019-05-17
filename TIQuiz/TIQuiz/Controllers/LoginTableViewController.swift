@@ -7,25 +7,33 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginTableViewController: UITableViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var senhaTextField: UITextField!
-    @IBOutlet weak var entrarButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
-    // MARK: - Table view data source
+    // MARK: botão de logar
+    @IBAction func logarButton(_ sender: Any) {
 
+        if emailTextField.text != "" && senhaTextField.text != "" {
+            Auth.auth().signIn(withEmail: emailTextField.text!, password: senhaTextField.text!, completion: {(user, error) in
+                if user != nil {
+                    print("Login realizado com sucesso!")
+                } else {
+                    print(error ?? "Login não foi realizado.")
+                }
+            })
+        }
+    }
+    
+    // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0

@@ -12,7 +12,6 @@
         <!--Login-->
         <scene sceneID="gHu-K6-Fqt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cos-Nv-Gt9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="ABy-Q7-STu" customClass="LoginTableViewController" customModule="TIQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r28-Sh-ygG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -23,35 +22,41 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fro-ns-Yr6">
-                                    <rect key="frame" x="20" y="100" width="374" height="30"/>
+                                    <rect key="frame" x="20" y="38" width="374" height="30"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" textContentType="email"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GMk-0g-7tc">
-                                    <rect key="frame" x="20" y="150" width="374" height="30"/>
+                                    <rect key="frame" x="20" y="88" width="374" height="30"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWb-dI-Qd6">
-                                    <rect key="frame" x="20" y="200" width="374" height="30"/>
+                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="entrarButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWb-dI-Qd6">
+                                    <rect key="frame" x="20" y="138" width="374" height="30"/>
                                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     <state key="normal" title="ENTRAR"/>
+                                    <connections>
+                                        <action selector="logarButton:" destination="ABy-Q7-STu" eventType="touchUpInside" id="sen-cL-Hs8"/>
+                                    </connections>
                                 </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="jAt-aT-9V9">
+                                    <rect key="frame" x="100" y="10" width="214" height="18"/>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="GMk-0g-7tc" firstAttribute="leading" secondItem="AmH-qk-2sa" secondAttribute="leading" constant="20" id="1jp-AZ-llf"/>
-                                <constraint firstItem="Fro-ns-Yr6" firstAttribute="top" secondItem="AmH-qk-2sa" secondAttribute="top" constant="100" id="8WN-zB-PyX"/>
+                                <constraint firstItem="Fro-ns-Yr6" firstAttribute="top" secondItem="jAt-aT-9V9" secondAttribute="bottom" constant="10" id="95i-7O-Y93"/>
                                 <constraint firstItem="UWb-dI-Qd6" firstAttribute="top" secondItem="GMk-0g-7tc" secondAttribute="bottom" constant="20" id="EVS-EX-3rt"/>
-                                <constraint firstItem="UWb-dI-Qd6" firstAttribute="centerX" secondItem="AmH-qk-2sa" secondAttribute="centerX" id="Hnv-14-BCT"/>
                                 <constraint firstItem="Fro-ns-Yr6" firstAttribute="leading" secondItem="AmH-qk-2sa" secondAttribute="leading" constant="20" id="Rpg-De-bSl"/>
-                                <constraint firstItem="GMk-0g-7tc" firstAttribute="centerX" secondItem="AmH-qk-2sa" secondAttribute="centerX" id="W3m-Z0-s69"/>
+                                <constraint firstAttribute="trailing" secondItem="jAt-aT-9V9" secondAttribute="trailing" constant="100" id="hdt-dU-jU5"/>
                                 <constraint firstAttribute="trailing" secondItem="UWb-dI-Qd6" secondAttribute="trailing" constant="20" id="n9o-Lv-iD0"/>
                                 <constraint firstItem="UWb-dI-Qd6" firstAttribute="leading" secondItem="AmH-qk-2sa" secondAttribute="leading" constant="20" id="nhk-l8-3t6"/>
-                                <constraint firstItem="Fro-ns-Yr6" firstAttribute="centerX" secondItem="AmH-qk-2sa" secondAttribute="centerX" id="oDk-rm-wbB"/>
+                                <constraint firstItem="jAt-aT-9V9" firstAttribute="leading" secondItem="AmH-qk-2sa" secondAttribute="leading" constant="100" id="rYd-Ju-yZF"/>
                                 <constraint firstAttribute="trailing" secondItem="Fro-ns-Yr6" secondAttribute="trailing" constant="20" id="t3d-Oy-g2F"/>
+                                <constraint firstItem="jAt-aT-9V9" firstAttribute="top" secondItem="AmH-qk-2sa" secondAttribute="top" constant="10" id="uas-SP-DKm"/>
                                 <constraint firstItem="GMk-0g-7tc" firstAttribute="top" secondItem="Fro-ns-Yr6" secondAttribute="bottom" constant="20" id="vmq-zE-qJ9"/>
                                 <constraint firstAttribute="trailing" secondItem="GMk-0g-7tc" secondAttribute="trailing" constant="20" id="zZq-4N-vvz"/>
                             </constraints>
@@ -64,10 +69,10 @@
                     <navigationItem key="navigationItem" title="Login" id="Sod-UB-Azt"/>
                     <connections>
                         <outlet property="emailTextField" destination="Fro-ns-Yr6" id="9yd-be-kD6"/>
-                        <outlet property="entrarButton" destination="UWb-dI-Qd6" id="SWC-yh-Rql"/>
                         <outlet property="senhaTextField" destination="GMk-0g-7tc" id="21h-f8-UhM"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cos-Nv-Gt9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-827.536231884058" y="-744.64285714285711"/>
         </scene>
@@ -109,7 +114,6 @@
         <!--Cadastro-->
         <scene sceneID="75P-T9-hAx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ATB-qw-gxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="gcK-eN-I6a" customClass="CadastroTableViewController" customModule="TIQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="N1e-uh-nps">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -120,55 +124,65 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u1J-5u-a6F">
-                                    <rect key="frame" x="20" y="250" width="374" height="30"/>
+                                    <rect key="frame" x="20" y="188" width="374" height="30"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e9n-eB-JSo">
-                                    <rect key="frame" x="20" y="100" width="374" height="30"/>
+                                    <rect key="frame" x="20" y="38" width="374" height="30"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Instituição" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rIh-Y7-HwM">
-                                    <rect key="frame" x="20" y="150" width="374" height="30"/>
+                                    <rect key="frame" x="20" y="88" width="374" height="30"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ff6-Qt-e7Q">
-                                    <rect key="frame" x="20" y="300" width="374" height="30"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ff6-Qt-e7Q">
+                                    <rect key="frame" x="20" y="238" width="374" height="30"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3y0-2f-ZpW">
-                                    <rect key="frame" x="20" y="350" width="374" height="30"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3y0-2f-ZpW">
+                                    <rect key="frame" x="20" y="288" width="374" height="30"/>
                                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     <state key="normal" title="SALVAR"/>
                                 </button>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Curso" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxK-OU-DuH">
-                                    <rect key="frame" x="20" y="200" width="374" height="30"/>
+                                    <rect key="frame" x="20" y="138" width="374" height="30"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person_add" translatesAutoresizingMaskIntoConstraints="NO" id="Ipd-N7-Cip">
+                                    <rect key="frame" x="100" y="10" width="214" height="18"/>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="ff6-Qt-e7Q" firstAttribute="top" secondItem="u1J-5u-a6F" secondAttribute="bottom" constant="20" id="0Nk-2d-VqR"/>
+                                <constraint firstItem="e9n-eB-JSo" firstAttribute="top" secondItem="Ipd-N7-Cip" secondAttribute="bottom" constant="10" id="0TA-X5-1xG"/>
                                 <constraint firstItem="rIh-Y7-HwM" firstAttribute="top" secondItem="e9n-eB-JSo" secondAttribute="bottom" constant="20" id="4KT-pf-nln"/>
+                                <constraint firstAttribute="trailing" secondItem="3y0-2f-ZpW" secondAttribute="trailing" constant="20" id="AeG-hv-zzb"/>
                                 <constraint firstItem="rIh-Y7-HwM" firstAttribute="leading" secondItem="Lwv-dr-veb" secondAttribute="leading" constant="20" id="FYP-qZ-DFo"/>
-                                <constraint firstItem="e9n-eB-JSo" firstAttribute="top" secondItem="Lwv-dr-veb" secondAttribute="top" constant="100" id="FfJ-8L-zOG"/>
                                 <constraint firstAttribute="trailing" secondItem="u1J-5u-a6F" secondAttribute="trailing" constant="20" id="HgM-hB-nCu"/>
+                                <constraint firstItem="ff6-Qt-e7Q" firstAttribute="leading" secondItem="Lwv-dr-veb" secondAttribute="leading" constant="20" id="KIm-13-shc"/>
                                 <constraint firstAttribute="trailing" secondItem="e9n-eB-JSo" secondAttribute="trailing" constant="20" id="Mj3-oe-Zjx"/>
+                                <constraint firstItem="Ipd-N7-Cip" firstAttribute="top" secondItem="Lwv-dr-veb" secondAttribute="top" constant="10" id="MxP-4F-vHE"/>
+                                <constraint firstItem="3y0-2f-ZpW" firstAttribute="leading" secondItem="Lwv-dr-veb" secondAttribute="leading" constant="20" id="QfW-gH-2De"/>
                                 <constraint firstItem="u1J-5u-a6F" firstAttribute="top" secondItem="OxK-OU-DuH" secondAttribute="bottom" constant="20" id="UPZ-cc-ZxR"/>
+                                <constraint firstItem="Ipd-N7-Cip" firstAttribute="leading" secondItem="Lwv-dr-veb" secondAttribute="leading" constant="100" id="W3y-Os-94X"/>
+                                <constraint firstAttribute="trailing" secondItem="ff6-Qt-e7Q" secondAttribute="trailing" constant="20" id="Yeo-Ik-17H"/>
                                 <constraint firstItem="OxK-OU-DuH" firstAttribute="leading" secondItem="Lwv-dr-veb" secondAttribute="leading" constant="20" id="aAb-A1-cTs"/>
                                 <constraint firstItem="e9n-eB-JSo" firstAttribute="leading" secondItem="Lwv-dr-veb" secondAttribute="leading" constant="20" id="aK1-Xi-cYu"/>
                                 <constraint firstItem="OxK-OU-DuH" firstAttribute="top" secondItem="rIh-Y7-HwM" secondAttribute="bottom" constant="20" id="aSR-37-pqg"/>
                                 <constraint firstAttribute="trailing" secondItem="rIh-Y7-HwM" secondAttribute="trailing" constant="20" id="i0I-Cu-taN"/>
                                 <constraint firstItem="u1J-5u-a6F" firstAttribute="leading" secondItem="Lwv-dr-veb" secondAttribute="leading" constant="20" id="mVe-Q4-1Fd"/>
+                                <constraint firstAttribute="trailing" secondItem="Ipd-N7-Cip" secondAttribute="trailing" constant="100" id="qRD-Xr-ZHD"/>
                                 <constraint firstItem="3y0-2f-ZpW" firstAttribute="top" secondItem="ff6-Qt-e7Q" secondAttribute="bottom" constant="20" id="u3j-lv-wcg"/>
                                 <constraint firstAttribute="trailing" secondItem="OxK-OU-DuH" secondAttribute="trailing" constant="20" id="zzu-0U-HfG"/>
                             </constraints>
@@ -188,8 +202,9 @@
                         <outlet property="senhaTextField" destination="ff6-Qt-e7Q" id="vn7-Q5-7K8"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATB-qw-gxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-784" y="-62"/>
+            <point key="canvasLocation" x="-784.05797101449286" y="-62.276785714285708"/>
         </scene>
         <!--Cadastro-->
         <scene sceneID="hfY-En-Qrr">
