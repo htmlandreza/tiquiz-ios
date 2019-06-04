@@ -25,10 +25,10 @@ class QuizViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // MARK: fazendo a barra do timer
+        // TODO: fazendo a barra do timer
         // definindo que a largura do timer é a largura da tela
         timerView.frame.size.width = view.frame.size.width
-        
+   
         // MARK: método para animar um elemento
         // TODO: depois alterar o tempo de duração
         UIView.animate(withDuration: 30.0, delay: 0, options: .curveLinear, animations: {
@@ -37,10 +37,9 @@ class QuizViewController: UIViewController {
             self.timerView.frame.size.width = 0
         }) {
             // MARK: se tudo der certo, chama o método showResults
-            (sucess) in
+            (success) in
             self.showResults()
         }
-        
         // MARK: chama um novo quiz
         getNewQuiz()
     }
