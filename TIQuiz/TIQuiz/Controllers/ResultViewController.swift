@@ -16,13 +16,23 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var wrongLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
+    var totalCorrectedAnswers: Int = 0
+    var totalAnswers: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        answeredLabel.text = "Perguntas respondidas: \(totalAnswers)"
+        correctLabel.text = "Perguntas corretas: \(totalCorrectedAnswers)"
+        wrongLabel.text = "Perguntas erradas: \(totalAnswers - totalCorrectedAnswers)"
+        
+        let score = totalCorrectedAnswers*100/totalAnswers
+        scoreLabel.text = "\(score)%"
     }
     
+    // MARK: fechar a tela
     @IBAction func close(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
  
