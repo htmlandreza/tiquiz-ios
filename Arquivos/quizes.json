@@ -211,23 +211,17 @@
     ]
     },
     {  
-      "question":"Carla, patrocinadora do projeto, solicita uma reunião ao Alexandre, gerente do
-      projeto, para verificar o andamento. Alexandre se reúne com sua equipe e
-      solicita uma série de informações. Quais informações terão maior relevância
-      para o patrocinador?",
-      "correctAnswer":"O custo das máquinas e dos equipamentos necessários para a execução
-      do projeto",
+      "question":"Carla, patrocinadora do projeto, solicita uma reunião ao Alexandre, gerente do projeto, para verificar o andamento. Alexandre se reúne com sua equipe e solicita uma série de informações. Quais informações terão maior relevância para o patrocinador?",
+      "correctAnswer":"O custo das máquinas e dos equipamentos necessários para a execução do projeto",
       "options":[  
          "Prazo do projeto",
-         "O custo das máquinas e dos equipamentos necessários para a execução
-         do projeto",
+         "O custo das máquinas e dos equipamentos necessários para a execução do projeto",
          "Se as pessoas estão motivadas com o projeto",
          "O número de fornecedores"
       ]
    },
    {  
-    "question":"Dentre as opções abaixo, qual a que menos pode ser considerada um sintoma
-    de que a equipe do projeto não está trabalhando efetivamente como um time?",
+    "question":"Dentre as opções abaixo, qual a que menos pode ser considerada um sintoma de que a equipe do projeto não está trabalhando efetivamente como um time?",
     "correctAnswer":"Conflito e competição",
     "options":[  
        "Frustração",
@@ -235,5 +229,25 @@
        "Reuniões improdutivas",
        "Conflito e competição"
     ]
- }
+ },
+ {  
+    "question":"Segundo o Guia PMBOK, o Plano do Projeto deve ser desenvolvido:",
+    "correctAnswer":"Pelo time do projeto",
+    "options":[  
+       "Por um comitê das partes interessadas",
+       "Pelo gerente do projeto",
+       "Pelo time do projeto",
+       "Pelo dirigente da organização"
+    ]
+ },
+ {  
+    "question":"De acordo com o PMBoK, a Área de Conhecimento Gerenciamento do Escopo do Projeto possui os processos: Coletar os Requisitos, Denir o Escopo, Vericar o Escopo, Controlar o Escopo e:",
+    "correctAnswer":"Criar a EAP",
+    "options":[  
+       "Criar a EAP",
+       "Sequenciar as Atividades",
+       "Controlar os Custos",
+       "Desenvolver o Plano de Gerenciamento do Projeto"
+    ]
+ }    
 ]
