@@ -10,5 +10,6 @@ target 'TIQuiz' do
   pod 'Alamofire', '~> 4.8.0'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Analytics'
 
 end
