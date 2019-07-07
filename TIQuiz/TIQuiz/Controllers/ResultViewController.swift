@@ -32,7 +32,7 @@ class ResultViewController: UIViewController {
     
     // MARK: fechar a tela
     @IBAction func close(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
     }
     
  

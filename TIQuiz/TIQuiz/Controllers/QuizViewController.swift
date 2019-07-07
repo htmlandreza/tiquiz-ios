@@ -7,19 +7,33 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
 
 class QuizViewController: UIViewController {
+    
+    var quizes: [QuizesFirebase] = []
+  
+    var ref:DatabaseReference!
+    var handle: DatabaseHandle!
+    
+    var myQuizes: [String] = []
+    
 
     // MARK: Declarações
     @IBOutlet weak var timerView: UIView!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet var answersButton: [UIButton]!
     
-    let quizManager = QuizManager()
+    var quizManager = QuizManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        carregaDados()
     }
+    
+    
     
     // MARK: esse método é chamado toda vez que essa tela for aparecer
     override func viewWillAppear(_ animated: Bool) {
@@ -31,14 +45,56 @@ class QuizViewController: UIViewController {
    
         // MARK: método para animar um elemento
         // TODO: depois alterar o tempo de duração
-        UIView.animate(withDuration: 30.0, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 20.0, delay: 0, options: .curveLinear, animations: {
             self.timerView.frame.size.width = 0
         }) { (success) in
             self.showResults()
         }
+        
         // MARK: chama um novo quiz
-        getNewQuiz()
+        self.getNewQuiz()
+        
+        
     }
+    
+    // Busca dados do Firebase
+    func carregaDados(){
+        let headers = [
+            "cache-control": "no-cache",
+            "Postman-Token": "da46e0ea-fe09-4880-ac3b-b5755648d39f"
+        ]
+        
+        let request = NSMutableURLRequest(url: NSURL(string: "https://tiquiz.firebaseio.com/quizes/bancodedados.json")! as URL,
+                                          cachePolicy: .useProtocolCachePolicy,
+                                          timeoutInterval: 10.0)
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = headers
+        
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            if (error != nil) {
+                print(error)
+            } else {
+                let httpResponse = response as? HTTPURLResponse
+                    if let httpStatus = response as? HTTPURLResponse{
+                        print("Status Code da UsersTableViewController = \(httpStatus.statusCode)")
+                        do {
+                            if let data = data{
+                                self.quizes = try JSONDecoder().decode([QuizesFirebase].self, from: data)
+                                print (self.quizes)
+                                
+                            }
+                        } catch let parseError as NSError {
+                            print("Error with Json: \(parseError)")
+                        }
+                    }
+            }
+        })
+        
+        dataTask.resume()
+    }
+    
+
     
     // MARK: gera um novo quiz
     func getNewQuiz(){
@@ -76,69 +132,5 @@ class QuizViewController: UIViewController {
         // pede um novo quiz
         getNewQuiz()
     }
-    
-    // FIX-ME: pegar dados direto do firebase
-    /*
-    func carregaQuizDev(){
-        let headers = [
-            "cache-control": "no-cache",
-            "Postman-Token": "ccae5776-8c0d-4746-9e50-91dfd89e9b9f"
-        ]
-        
-        let request = NSMutableURLRequest(url: NSURL(string: "https://tiquiz.firebaseio.com/quizes/dev.json")! as URL,
-                                          cachePolicy: .useProtocolCachePolicy,
-                                          timeoutInterval: 10.0)
-        request.httpMethod = "GET"
-        request.allHTTPHeaderFields = headers
-        
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-            if (error != nil) {
-                print(error)
-            } else {
-                let httpResponse = response as? HTTPURLResponse
-                print(httpResponse.debugDescription)
-                
-                if let httpStatus = response as? HTTPURLResponse{
-                    // retorno da requisição com todos os parâmetros tratados do usuário identificado
-                    if httpStatus.statusCode == 200 {
-                        print("Status Code da UsersTableViewController = \(httpStatus.statusCode)")
-                        
-                        do {
-                            if let data = data{
-                                self.quizesDev = try! JSONDecoder().decode([QuizDev].self, from: data)
-                                print (self.quizesDev)
-                                
-                            }
-                            
-                        } catch let parseError as NSError {
-                            print("Error with Json: \(parseError)")
-                        }
-                    }
-                }
-            })
-            
-            dataTask.resume()
-        }
-        
-        // MARK: esse método é chamado toda vez que essa tela for aparecer
-        func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
-            
-            // TODO: não está funcionando o timer
-            // definindo que a largura do timer é a largura da tela
-            timerView.frame.size.width = view.frame.size.width
-            
-            // MARK: método para animar um elemento
-            // TODO: depois alterar o tempo de duração
-            UIView.animate(withDuration: 30.0, delay: 0, options: .curveLinear, animations: {
-                self.timerView.frame.size.width = 0
-            }) { (success) in
-                self.showResults()
-            }
-            // MARK: chama um novo quiz
-            getNewQuiz()
-        }
- */
     
 }

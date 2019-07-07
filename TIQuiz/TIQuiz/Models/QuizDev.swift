@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct QuizDev: Codable {
+struct QuizesFirebase: Codable {
     let correctAnswer: String
     let options: [String]
     let question: String
