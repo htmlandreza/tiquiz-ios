@@ -7,25 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E9AF90A225D931000017100 /* quizQuestions.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E9AF909225D931000017100 /* quizQuestions.json */; };
+		1E0D6FAC22D29776005E8F0B /* BancoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D6FAB22D29775005E8F0B /* BancoViewController.swift */; };
+		1E0D6FAE22D29800005E8F0B /* BancoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D6FAD22D29800005E8F0B /* BancoManager.swift */; };
+		1E0D6FB022D2A086005E8F0B /* GestaoProjetoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D6FAF22D2A086005E8F0B /* GestaoProjetoViewController.swift */; };
+		1E0D6FB222D2A0D5005E8F0B /* GestaoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D6FB122D2A0D5005E8F0B /* GestaoManager.swift */; };
+		1E0D6FB422D2A1D8005E8F0B /* ProgramacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D6FB322D2A1D8005E8F0B /* ProgramacaoViewController.swift */; };
+		1E0D6FB622D2A1ED005E8F0B /* SistemasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D6FB522D2A1ED005E8F0B /* SistemasViewController.swift */; };
+		1E0D6FB822D2A20B005E8F0B /* ProgramacaoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D6FB722D2A20B005E8F0B /* ProgramacaoManager.swift */; };
+		1E0D6FBA22D2A21D005E8F0B /* SistemasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0D6FB922D2A21D005E8F0B /* SistemasManager.swift */; };
+		1E7D228322C9A76C0092D5D3 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D228222C9A76C0092D5D3 /* QuizManager.swift */; };
+		1E7D228522C9A7A10092D5D3 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D228422C9A7A10092D5D3 /* Quiz.swift */; };
+		1E7D229022C9A9570092D5D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D228F22C9A9570092D5D3 /* GoogleService-Info.plist */; };
+		1E7D229322C9AC400092D5D3 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D229122C9AC400092D5D3 /* QuizViewController.swift */; };
+		1E7D229422C9AC400092D5D3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D229222C9AC400092D5D3 /* ResultViewController.swift */; };
+		1EBD86D722CC400F00DB99FC /* QuizDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBD86D622CC400F00DB99FC /* QuizDev.swift */; };
+		1EBD86DB22CC4A9200DB99FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EBD86DA22CC4A9200DB99FC /* Assets.xcassets */; };
 		1EEE4070225D5A0C00D379C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE406F225D5A0C00D379C8 /* AppDelegate.swift */; };
 		1EEE4072225D5A0C00D379C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4071225D5A0C00D379C8 /* ViewController.swift */; };
 		1EEE4075225D5A0C00D379C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4073225D5A0C00D379C8 /* Main.storyboard */; };
-		1EEE4077225D5A0F00D379C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4076225D5A0F00D379C8 /* Assets.xcassets */; };
 		1EEE407A225D5A0F00D379C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4078225D5A0F00D379C8 /* LaunchScreen.storyboard */; };
-		1EEE4085225D5A5700D379C8 /* QuizClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4084225D5A5700D379C8 /* QuizClasses.swift */; };
+		E68C8BFD16C4C73EA4AB40D8 /* Pods_TIQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2EA1E4D25990F8ECC801AF /* Pods_TIQuiz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E9AF909225D931000017100 /* quizQuestions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quizQuestions.json; sourceTree = "<group>"; };
+		0F9BE00DED4DE9B747287866 /* Pods-TIQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIQuiz.debug.xcconfig"; path = "Target Support Files/Pods-TIQuiz/Pods-TIQuiz.debug.xcconfig"; sourceTree = "<group>"; };
+		1E0D6FAB22D29775005E8F0B /* BancoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoViewController.swift; sourceTree = "<group>"; };
+		1E0D6FAD22D29800005E8F0B /* BancoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoManager.swift; sourceTree = "<group>"; };
+		1E0D6FAF22D2A086005E8F0B /* GestaoProjetoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestaoProjetoViewController.swift; sourceTree = "<group>"; };
+		1E0D6FB122D2A0D5005E8F0B /* GestaoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestaoManager.swift; sourceTree = "<group>"; };
+		1E0D6FB322D2A1D8005E8F0B /* ProgramacaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramacaoViewController.swift; sourceTree = "<group>"; };
+		1E0D6FB522D2A1ED005E8F0B /* SistemasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SistemasViewController.swift; sourceTree = "<group>"; };
+		1E0D6FB722D2A20B005E8F0B /* ProgramacaoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramacaoManager.swift; sourceTree = "<group>"; };
+		1E0D6FB922D2A21D005E8F0B /* SistemasManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SistemasManager.swift; sourceTree = "<group>"; };
+		1E2EA1E4D25990F8ECC801AF /* Pods_TIQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TIQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E7D228222C9A76C0092D5D3 /* QuizManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
+		1E7D228422C9A7A10092D5D3 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		1E7D228F22C9A9570092D5D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E7D229122C9AC400092D5D3 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		1E7D229222C9AC400092D5D3 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		1EBD86D622CC400F00DB99FC /* QuizDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDev.swift; sourceTree = "<group>"; };
+		1EBD86DA22CC4A9200DB99FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EEE406C225D5A0C00D379C8 /* TIQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEE406F225D5A0C00D379C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EEE4071225D5A0C00D379C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1EEE4074225D5A0C00D379C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1EEE4076225D5A0F00D379C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EEE4079225D5A0F00D379C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EEE407B225D5A0F00D379C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EEE4084225D5A5700D379C8 /* QuizClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizClasses.swift; sourceTree = "<group>"; };
+		A29AB416D507B30D2989B129 /* Pods-TIQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIQuiz.release.xcconfig"; path = "Target Support Files/Pods-TIQuiz/Pods-TIQuiz.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68C8BFD16C4C73EA4AB40D8 /* Pods_TIQuiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +73,8 @@
 			children = (
 				1EEE406E225D5A0C00D379C8 /* TIQuiz */,
 				1EEE406D225D5A0C00D379C8 /* Products */,
+				B30F2918C519D77FD9A83B67 /* Pods */,
+				6AD6C310D92B12058E92C9D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,12 +89,12 @@
 		1EEE406E225D5A0C00D379C8 /* TIQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				1EBD86DA22CC4A9200DB99FC /* Assets.xcassets */,
 				1EEE4086225D5F6100D379C8 /* Files */,
 				1EEE4083225D5A3B00D379C8 /* Views */,
 				1EEE4082225D5A2100D379C8 /* Controllers */,
 				1EEE4081225D5A1B00D379C8 /* Models */,
 				1EEE406F225D5A0C00D379C8 /* AppDelegate.swift */,
-				1EEE4076225D5A0F00D379C8 /* Assets.xcassets */,
 				1EEE407B225D5A0F00D379C8 /* Info.plist */,
 			);
 			path = TIQuiz;
@@ -72,7 +103,13 @@
 		1EEE4081225D5A1B00D379C8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1EEE4084225D5A5700D379C8 /* QuizClasses.swift */,
+				1E7D228422C9A7A10092D5D3 /* Quiz.swift */,
+				1E7D228222C9A76C0092D5D3 /* QuizManager.swift */,
+				1E0D6FAD22D29800005E8F0B /* BancoManager.swift */,
+				1E0D6FB122D2A0D5005E8F0B /* GestaoManager.swift */,
+				1E0D6FB722D2A20B005E8F0B /* ProgramacaoManager.swift */,
+				1EBD86D622CC400F00DB99FC /* QuizDev.swift */,
+				1E0D6FB922D2A21D005E8F0B /* SistemasManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -80,7 +117,14 @@
 		1EEE4082225D5A2100D379C8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1E7D228F22C9A9570092D5D3 /* GoogleService-Info.plist */,
+				1E7D229122C9AC400092D5D3 /* QuizViewController.swift */,
+				1E0D6FAB22D29775005E8F0B /* BancoViewController.swift */,
+				1E0D6FAF22D2A086005E8F0B /* GestaoProjetoViewController.swift */,
+				1E0D6FB322D2A1D8005E8F0B /* ProgramacaoViewController.swift */,
+				1E7D229222C9AC400092D5D3 /* ResultViewController.swift */,
 				1EEE4071225D5A0C00D379C8 /* ViewController.swift */,
+				1E0D6FB522D2A1ED005E8F0B /* SistemasViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -97,9 +141,25 @@
 		1EEE4086225D5F6100D379C8 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				1E9AF909225D931000017100 /* quizQuestions.json */,
 			);
 			path = Files;
+			sourceTree = "<group>";
+		};
+		6AD6C310D92B12058E92C9D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E2EA1E4D25990F8ECC801AF /* Pods_TIQuiz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B30F2918C519D77FD9A83B67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F9BE00DED4DE9B747287866 /* Pods-TIQuiz.debug.xcconfig */,
+				A29AB416D507B30D2989B129 /* Pods-TIQuiz.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EEE407E225D5A0F00D379C8 /* Build configuration list for PBXNativeTarget "TIQuiz" */;
 			buildPhases = (
+				BEFD3B184256A77EEED05AF4 /* [CP] Check Pods Manifest.lock */,
 				1EEE4068225D5A0C00D379C8 /* Sources */,
 				1EEE4069225D5A0C00D379C8 /* Frameworks */,
 				1EEE406A225D5A0C00D379C8 /* Resources */,
+				1C3DE09FB9B6D36079828985 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +196,7 @@
 				TargetAttributes = {
 					1EEE406B225D5A0C00D379C8 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -161,13 +224,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EEE407A225D5A0F00D379C8 /* LaunchScreen.storyboard in Resources */,
-				1EEE4077225D5A0F00D379C8 /* Assets.xcassets in Resources */,
-				1E9AF90A225D931000017100 /* quizQuestions.json in Resources */,
 				1EEE4075225D5A0C00D379C8 /* Main.storyboard in Resources */,
+				1EBD86DB22CC4A9200DB99FC /* Assets.xcassets in Resources */,
+				1E7D229022C9A9570092D5D3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C3DE09FB9B6D36079828985 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TIQuiz/Pods-TIQuiz-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TIQuiz/Pods-TIQuiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEFD3B184256A77EEED05AF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TIQuiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1EEE4068225D5A0C00D379C8 /* Sources */ = {
@@ -175,8 +293,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EEE4072225D5A0C00D379C8 /* ViewController.swift in Sources */,
-				1EEE4085225D5A5700D379C8 /* QuizClasses.swift in Sources */,
+				1E0D6FB422D2A1D8005E8F0B /* ProgramacaoViewController.swift in Sources */,
+				1E7D229322C9AC400092D5D3 /* QuizViewController.swift in Sources */,
+				1E0D6FB622D2A1ED005E8F0B /* SistemasViewController.swift in Sources */,
+				1EBD86D722CC400F00DB99FC /* QuizDev.swift in Sources */,
+				1E7D228322C9A76C0092D5D3 /* QuizManager.swift in Sources */,
 				1EEE4070225D5A0C00D379C8 /* AppDelegate.swift in Sources */,
+				1E7D228522C9A7A10092D5D3 /* Quiz.swift in Sources */,
+				1E0D6FAC22D29776005E8F0B /* BancoViewController.swift in Sources */,
+				1E0D6FB022D2A086005E8F0B /* GestaoProjetoViewController.swift in Sources */,
+				1E0D6FB822D2A20B005E8F0B /* ProgramacaoManager.swift in Sources */,
+				1E0D6FAE22D29800005E8F0B /* BancoManager.swift in Sources */,
+				1E0D6FB222D2A0D5005E8F0B /* GestaoManager.swift in Sources */,
+				1E7D229422C9AC400092D5D3 /* ResultViewController.swift in Sources */,
+				1E0D6FBA22D2A21D005E8F0B /* SistemasManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,17 +450,22 @@
 		};
 		1EEE407F225D5A0F00D379C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F9BE00DED4DE9B747287866 /* Pods-TIQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QK9CM4BUJ8;
+				DEVELOPMENT_TEAM = 5SCW2ASFJ5;
 				INFOPLIST_FILE = TIQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Andreza-Moreira.TIQuiz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrezamoreira.tiquiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TIQuiz/TIQuiz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,17 +473,21 @@
 		};
 		1EEE4080225D5A0F00D379C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A29AB416D507B30D2989B129 /* Pods-TIQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QK9CM4BUJ8;
+				DEVELOPMENT_TEAM = 5SCW2ASFJ5;
 				INFOPLIST_FILE = TIQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Andreza-Moreira.TIQuiz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrezamoreira.tiquiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TIQuiz/TIQuiz-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
